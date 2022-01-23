@@ -49,4 +49,4 @@ chmod +w manjaro/sys
 chmod +w manjaro/srv/ftp
 chmod +w manjaro/proc
 chmod +w manjaro/etc/ca-certificates/extracted/cadir
-``
+```
