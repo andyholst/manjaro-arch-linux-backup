@@ -1,0 +1,1 @@
+/usr/share/doc/p7zip/DOC/unRarLicense.txt
