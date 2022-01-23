@@ -40,7 +40,7 @@ find manjaro -type d -exec touch {}/.gitkeep \; # First time you need to chmod s
 find $(pwd)/manjaro -type f -exec gzip -f \{\} \;
 find $(pwd)/manjaro -type f -name "*.gz" -type f -size +100M -exec bash -c "split -b 100M {} {}.part && rm {}" \;
 
-## Nessesary to chmod empty directories to be able to keep directory structure in git first time
+## Nessesary to chmod specific empty directories to be able to keep directory structure in git first time
 
 ```
 chmod +w manjaro/var/lib/nfs/rpc_pipefs
