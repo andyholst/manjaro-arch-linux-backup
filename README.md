@@ -39,6 +39,7 @@ find $(pwd)/manjaro/var/log -type f -name "*.log" -exec truncate --size 0 {} +
 find manjaro -type d -exec touch {}/.gitkeep \; # First time you need to chmod specific empty directories to keep Linux directory structure in Git
 find $(pwd)/manjaro -type f -exec gzip -f \{\} \;
 find $(pwd)/manjaro -type f -name "*.gz" -type f -size +100M -exec bash -c "split -b 100M {} {}.part && rm {}" \;
+```
 
 ## Nessesary to chmod specific empty directories to be able to keep directory structure in git first time
 
